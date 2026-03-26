@@ -60,12 +60,12 @@ layers:
   - LEFT WIN
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:backspace$$', h: bluetooth}
+  - {t: '$$mdi:backspace$$', h: LAYER2}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: shortcut, h: toggle}
-  - {t: bluetooth, h: toggle}
-  - {t: rgb, h: toggle}
-  shortcut:
+  - {t: LAYER1, h: toggle}
+  - {t: LAYER2, h: toggle}
+  - {t: LAYER3, h: toggle}
+  LAYER1:
   - {t: '`', s: '~'}
   - F1
   - F2
@@ -130,7 +130,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '0', s: )}
   - .
-  bluetooth:
+  LAYER2:
   - '~'
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
@@ -195,7 +195,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: LAYER0, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
-  rgb:
+  LAYER3:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
