@@ -54,7 +54,6 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <200>;
             flavor = "tap-preferred"; // 優先判定為 Tap
-            retro-tap;                // 關鍵：放開時補送訊號
         };
 
         // B 鍵與 N 鍵：長按 Shift，短按字母，放開時補送 Shift (觸發中英切換)
