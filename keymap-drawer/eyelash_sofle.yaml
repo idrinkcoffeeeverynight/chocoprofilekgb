@@ -40,7 +40,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - \
-  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
   - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
   - X
   - C
@@ -52,15 +52,15 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: '''', s: '"'}
+  - {t: '''', h: '$$mdi:apple-keyboard-option$$', s: '"'}
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:backspace-reverse-outline$$
   - $$mdi:apple-keyboard-option$$
   - LEFT WIN
-  - {t: '$$mdi:keyboard-space$$', h: layer1}
+  - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:backspace$$', h: layer2}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: layer1, h: toggle}
   - {t: layer2, h: toggle}
@@ -82,9 +82,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - F11
   - F12
-  - $$mdi:mouse-scroll-wheel$$
-  - $$mdi:mouse-right-click-outline$$
-  - '&mkp MB4'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+R
+  - Ctl+T
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - '7'
   - '8'
@@ -93,10 +93,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '-', s: _}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '~'
+  - Ctl+A
+  - Ctl+S
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+F
   - '&mkp MB5'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - '4'
@@ -123,7 +123,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:pan-up$$', type: held}
+  - $$mdi:pan-up$$
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:pan-down$$
   - {t: '$$mdi:transfer$$', type: trans}
@@ -190,7 +190,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
