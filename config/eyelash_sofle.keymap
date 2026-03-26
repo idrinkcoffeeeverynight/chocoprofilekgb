@@ -4,7 +4,6 @@
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
@@ -31,20 +30,25 @@
 
 / {
     // 1. 先定義 behaviors 區塊
+
     behaviors {
         // 將 scroll_encoder 移到這裡
+
         scroll_encoder: scroll_encoder {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
             tap-ms = <100>;
         };
 
-      // 刪除鍵：長按換層，短按刪除，放開時若無動作則補送 Backspace (觸發輸入法切換)
+        // 刪除鍵：長按換層，短按刪除，放開時若無動作則補送 Backspace (觸發輸入法切換)
+
         forbackspace: forbackspace {
             compatible = "zmk,behavior-hold-tap";
             label = "FORBACKSPACE";
             bindings = <&mo>, <&kp>;
+
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <200>;
@@ -53,10 +57,12 @@
         };
 
         // B 鍵與 N 鍵：長按 Shift，短按字母，放開時補送 Shift (觸發中英切換)
+
         shiftandtyping: shiftandtyping {
             compatible = "zmk,behavior-hold-tap";
             label = "SHIFTANDTYPING";
             bindings = <&kp>, <&kp>;
+
             #binding-cells = <2>;
             tapping-term-ms = <170>;   // Shift 建議稍微短一點，比較靈敏
             quick-tap-ms = <0>;
@@ -135,11 +141,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans      &trans           &trans           &trans           &trans             &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &bl BL_ON   &rgb_ug RGB_EFR  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &rgb_ug RGB_ON     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &bl BL_OFF  &rgb_ug RGB_SPD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPI  &rgb_ug RGB_OFF    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans      &trans           &trans           &trans           &trans             &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans      &trans           &trans           &trans           &trans             &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans           &trans           &trans           &trans             &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &rgb_ug RGB_EFR  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &rgb_ug RGB_ON     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &rgb_ug RGB_SPD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPI  &rgb_ug RGB_OFF    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans           &trans           &trans           &trans             &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans           &trans           &trans           &trans             &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             display-name = "layer3";
