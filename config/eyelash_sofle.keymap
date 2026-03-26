@@ -40,7 +40,7 @@
             tap-ms = <100>;
         };
 
-        // 將 Backspace 行為移到這裡
+      // 刪除鍵：長按換層，短按刪除，放開時若無動作則補送 Backspace (觸發輸入法切換)
         forbackspace: forbackspace {
             compatible = "zmk,behavior-hold-tap";
             label = "FORBACKSPACE";
@@ -48,18 +48,20 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <200>;
-            flavor = "balanced";
-            retro-tap;
+            flavor = "tap-preferred"; // 優先判定為 Tap
+            retro-tap;                // 關鍵：放開時補送訊號
         };
 
-        // 將 Shift-B 行為移到這裡
+        // B 鍵與 N 鍵：長按 Shift，短按字母，放開時補送 Shift (觸發中英切換)
         shiftandtyping: shiftandtyping {
             compatible = "zmk,behavior-hold-tap";
             label = "SHIFTANDTYPING";
             bindings = <&kp>, <&kp>;
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-unless-interrupted";
+            tapping-term-ms = <170>;   // Shift 建議稍微短一點，比較靈敏
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";  // 優先判定為 Tap，適合中英切換需求
+            retro-tap;                 // 關鍵：這會讓長按放開後觸發 Windows 的切換
         };
     };
 
