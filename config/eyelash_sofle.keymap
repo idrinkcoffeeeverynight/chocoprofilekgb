@@ -120,7 +120,7 @@
 &kp C_MUTE  &trans     &kp LA(ENTER)  &trans     &trans     &msc SCRL_UP    &mkp LCLK        &msc SCRL_DOWN  &kp EQUAL     &trans        &kp N0        &kp PERIOD
             >;
 
-            display-name = "shortcut";
+            display-name = "LAYER1";
             sensor-bindings = <&scroll_encoder>;
         };
 
@@ -133,7 +133,7 @@
 &trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans           &trans             &trans             &to 0                 &trans
             >;
 
-            display-name = "bluetooth";
+            display-name = "LAYER2";
             sensor-bindings = <&scroll_encoder>;
         };
 
@@ -146,7 +146,7 @@
 &trans  &trans  &trans           &trans           &trans           &trans             &trans  &trans  &trans        &trans        &trans        &to 0
             >;
 
-            display-name = "rgb";
+            display-name = "LAYER3";
             sensor-bindings = <&scroll_encoder>;
         };
 
