@@ -68,7 +68,6 @@
             tapping-term-ms = <170>;   // Shift 建議稍微短一點，比較靈敏
             quick-tap-ms = <0>;
             flavor = "tap-preferred";  // 優先判定為 Tap，適合中英切換需求
-            retro-tap;                 // 關鍵：這會讓長按放開後觸發 Windows 的切換
         };
     };
 
