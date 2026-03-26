@@ -30,37 +30,37 @@
 &soft_off { hold-time-ms = <2000>; };
 
 / {
-    scroll_encoder: scroll_encoder {
-        compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <0>;
-        bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-
-        tap-ms = <100>;
-    };
-
-    forbackspace: forbackspace {
-        compatible = "zmk,behavior-hold-tap";
-        label = "FORBACKSPACE";
-        bindings = <&mo>, <&kp>;
-
-        #binding-cells = <2>;
-        tapping-term-ms = <200>;
-        quick-tap-ms = <200>;
-        flavor = "balanced";
-        retro-tap;
-    };
-
-    shiftandtyping: shiftandtyping {
-        compatible = "zmk,behavior-hold-tap";
-        label = "SHIFTANDTYPING";
-        bindings = <&kp>, <&kp>;
-
-        #binding-cells = <2>;
-        tapping-term-ms = <200>;
-        flavor = "tap-unless-interrupted";
-    };
-
+    // 1. 先定義 behaviors 區塊
     behaviors {
+        // 將 scroll_encoder 移到這裡
+        scroll_encoder: scroll_encoder {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+            tap-ms = <100>;
+        };
+
+        // 將 Backspace 行為移到這裡
+        forbackspace: forbackspace {
+            compatible = "zmk,behavior-hold-tap";
+            label = "FORBACKSPACE";
+            bindings = <&mo>, <&kp>;
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            flavor = "balanced";
+            retro-tap;
+        };
+
+        // 將 Shift-B 行為移到這裡
+        shiftandtyping: shiftandtyping {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SHIFTANDTYPING";
+            bindings = <&kp>, <&kp>;
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-unless-interrupted";
+        };
     };
 
     combos {
