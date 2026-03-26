@@ -5,7 +5,6 @@
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
@@ -140,11 +139,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans           &trans           &trans           &trans             &trans  &trans  &trans            &trans  &trans  &trans  &trans
-&trans  &trans  &rgb_ug RGB_EFR  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &rgb_ug RGB_ON     &trans  &trans  &ext_power EP_ON  &trans  &trans  &trans  &trans
-&trans  &trans  &rgb_ug RGB_SPD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPI  &rgb_ug RGB_OFF    &trans  &trans  &trans            &trans  &trans  &trans  &trans
-&trans  &trans  &trans           &trans           &trans           &trans             &trans  &trans  &trans            &trans  &trans  &trans  &trans
-&trans  &trans  &trans           &trans           &trans           &trans             &trans  &trans  &trans            &trans  &trans  &trans
+&trans  &trans  &trans           &trans           &trans           &trans             &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &rgb_ug RGB_EFR  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &rgb_ug RGB_ON     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &rgb_ug RGB_SPD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPI  &rgb_ug RGB_OFF    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans           &trans           &trans           &trans             &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans           &trans           &trans           &trans             &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             display-name = "layer3";
