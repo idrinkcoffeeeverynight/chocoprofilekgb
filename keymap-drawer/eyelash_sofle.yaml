@@ -40,8 +40,8 @@ layers:
   - L
   - {t: ;, s: ':'}
   - \
-  - $$mdi:apple-keyboard-shift$$
-  - {t: Z, h: '$$mdi:apple-keyboard-control$$'}
+  - $$mdi:apple-keyboard-control$$
+  - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
   - X
   - C
   - V
@@ -55,14 +55,14 @@ layers:
   - {t: '''', h: '$$mdi:apple-keyboard-option$$', s: '"'}
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-control$$
-  - $$mdi:backspace-reverse-outline$$
   - $$mdi:apple-keyboard-option$$
+  - $$mdi:backspace-reverse-outline$$
   - LEFT WIN
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', h: arrow}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: shortcut, h: toggle}
+  - shortcut
   - {t: arrow, h: toggle}
   - {t: RGB, h: toggle}
   shortcut:
@@ -121,13 +121,13 @@ layers:
   - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: 'Alt+$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:pan-up$$
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:pan-down$$
   - {t: '=', s: +}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '0', s: )}
   - .
   arrow:
@@ -186,11 +186,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:backspace-reverse-outline$$
+  - LEFT WIN
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
-  - {t: LEFT WIN, type: held}
+  - {t: '$$mdi:backspace$$', type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: typing..., h: toggle}
