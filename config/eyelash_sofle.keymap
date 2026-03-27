@@ -139,11 +139,11 @@
 
         layer3 {
             bindings = <
-&trans  &trans  &trans           &trans           &trans           &trans             &trans  &trans  &trans        &trans        &trans        &trans  &trans
-&trans  &trans  &rgb_ug RGB_EFR  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &rgb_ug RGB_ON     &trans  &trans  &out OUT_USB  &out OUT_BLE  &out OUT_TOG  &trans  &trans
-&trans  &trans  &rgb_ug RGB_SPD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPI  &rgb_ug RGB_OFF    &trans  &trans  &trans        &trans        &trans        &trans  &trans
-&trans  &trans  &trans           &trans           &trans           &trans             &trans  &trans  &trans        &trans        &trans        &trans  &trans
-&trans  &trans  &trans           &trans           &trans           &trans             &trans  &trans  &trans        &trans        &trans        &to 0
+&trans  &trans           &trans           &trans           &trans           &trans             &trans  &trans  &trans        &trans        &trans        &trans  &trans
+&trans  &rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &rgb_ug RGB_ON     &trans  &trans  &out OUT_USB  &out OUT_BLE  &out OUT_TOG  &trans  &trans
+&trans  &trans           &rgb_ug RGB_SPD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPI  &rgb_ug RGB_OFF    &trans  &trans  &trans        &trans        &trans        &trans  &trans
+&trans  &trans           &trans           &trans           &trans           &trans             &trans  &trans  &trans        &trans        &trans        &trans  &trans
+&trans  &trans           &trans           &trans           &trans           &trans             &trans  &trans  &trans        &trans        &trans        &to 0
             >;
 
             display-name = "RGB";
