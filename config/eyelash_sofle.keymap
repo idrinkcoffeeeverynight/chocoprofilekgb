@@ -130,10 +130,10 @@
 &trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans           &trans             &kp UP_ARROW       &trans                &kp C_PLAY            &trans
 &trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans           &kp LEFT_ARROW     &kp DOWN           &kp RIGHT             &kp C_PAUSE           &trans
 &trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans           &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE       &trans
-&trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans           &trans             &trans             &to 0                 &trans
+&trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &kp LEFT_WIN     &trans             &trans             &to 0                 &trans
             >;
 
-            display-name = "bluetooth";
+            display-name = "arrow";
             sensor-bindings = <&scroll_encoder>;
         };
 
