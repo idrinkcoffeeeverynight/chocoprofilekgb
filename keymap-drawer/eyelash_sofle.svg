@@ -637,8 +637,8 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:backspace" xlink:href="#mdi:backspace" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:backspace"/>
-<a href="#bluetooth">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 67%">bluetooth</tspan></text>
+<a href="#arrow">
+<text x="0" y="24" class="key hold layer-activator">arrow</text>
 </a></g>
 <g transform="translate(610, 283) rotate(-30.0)" class="key enter keypos-60">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key enter side"/>
@@ -655,8 +655,8 @@ rect.held, rect.combo.held {
 <g transform="translate(728, 252)" class="key keypos-62">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<a href="#bluetooth">
-<text x="0" y="-4" class="key tap layer-activator"><tspan style="font-size: 67%">bluetooth</tspan></text>
+<a href="#arrow">
+<text x="0" y="-4" class="key tap layer-activator">arrow</text>
 </a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(784, 259)" class="key keypos-63">
@@ -1019,8 +1019,8 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(40, 776)" class="layer-bluetooth">
-<text x="0" y="28" class="label" id="bluetooth">bluetooth:</text>
+<g transform="translate(40, 776)" class="layer-arrow">
+<text x="0" y="28" class="label" id="arrow">arrow:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1338,6 +1338,9 @@ rect.held, rect.combo.held {
 <g transform="translate(535, 294) rotate(-30.0)" class="key held keypos-59">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held"/>
+<text x="0" y="-4" class="key held tap">
+<tspan x="0" dy="-0.6em">LEFT</tspan><tspan x="0" dy="1.2em">WIN</tspan>
+</text>
 </g>
 <g transform="translate(610, 283) rotate(-30.0)" class="key trans keypos-60">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
